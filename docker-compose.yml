@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: ruby_sinatra_app
+    ports:
+      - "4567:4567"
+    volumes:
+      - .:/app
+    environment:
+      - RACK_ENV=development
+      - JWT_SECRET='mySecretK3y'
