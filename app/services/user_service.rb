@@ -9,21 +9,20 @@ class UserService
   end
 
   # Crea un usuario y devuelve un hash con los datos públicos (sin contraseña)
-  def create_user(username, password, email = nil)
+  def create_user(username, password)
     user = @repo.find_by_username(username)
     if user
       raise UsernameTakenError, 'Username already taken'
     end
     password_digest = BCrypt::Password.create(password)
-    user = @repo.create(username: username, password_digest: password_digest, email: email)
+    user = @repo.create(username: username, password_digest: password_digest)
     if user.nil?
       raise UserNotCreatedError, 'Error creating user'
     end
 
     {
       id: user.id,
-      username: user.username,
-      email: user.respond_to?(:email) ? user.email : nil
+      username: user.username
     }
   end
 

@@ -6,8 +6,8 @@ class InMemoryUserRepository
     @next_id = 1
   end
 
-  def create(username:, password_digest:, email: nil)
-    user = OpenStruct.new(id: @next_id, username: username, password_digest: password_digest, email: email)
+  def create(username:, password_digest:)
+    user = OpenStruct.new(id: @next_id, username: username, password_digest: password_digest)
     @users << user
     @next_id += 1
     user
