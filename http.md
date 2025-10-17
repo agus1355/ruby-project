@@ -1,0 +1,1 @@
+HTTP es un protocolo transferencia de informacion a nivel aplicacion. Establece las reglas para un cliente y un servidor se puedan comunicar correctamente. Este protocolo cuenta con los verbos HTTP, que nos definen la accion q se quiere hacer sobre un recurso. Los mas conocidos son GET, POST, PUT, DELETE, entre otros.

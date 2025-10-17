@@ -34,23 +34,12 @@ Incluye ejemplos de:
 
 ## 🐳 Levantar con Docker
 
-1. Construir la imagen
-    ```bash
-    docker build -t ruby-api .
-    ```
-2. Levantar el contenedor
-    ```bash
-    docker run -p 4567:4567 ruby-api
-    ```
-    O con docker-compose:
-    ```bash
-    docker-compose up --build
-    ```
+    Ejecutar directamente docker-compose up
 
 ---
 
 ## 🧪 Endpoints
 
-POST /products
-GET /products/:id
-POST /login
+- POST /products
+- GET /products/:id
+- POST /login

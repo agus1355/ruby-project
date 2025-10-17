@@ -1,0 +1,3 @@
+FUDO es un sistema que permite realizar una gestion integral de un negocio gastronomico. Cuenta con varias funcionalidades para los comensales. Una de las mas destacadas es la carta QR, que les permite acceder a dicho menu a partir de un QR.
+Otra caracteristica con la que cuenta es que permite realizar el pago de multiples maneras, integrándose con billeteras virtuales, como mercadopago.
+Tambien cuenta con funcionalidades para los dueños de los negocios. Pueden gestionar los diferentes pedidos de los comensales, hacer gestion del inventario, como tambien reportes que le puedan permitir mejorar su negocio.

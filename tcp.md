@@ -1,0 +1,1 @@
+TCP es un protocolo de transferencia de datos utilizado en internet. Su principal caracteristica es que asegura que la informacion llega a su destino. Esto se logra porque el destino envia una mensaje de confirmacion al emisor, una vez q recibe la informacion. En el caso de que no llegue o llegue dañada, TCP se encarga de retransmitirla.
